@@ -1,0 +1,9 @@
+composer i 
+php bin/console doctrine:database:create
+php bin/console doctrine:schema:update --force
+
+php bin/console server:run
+
+
+["ROLE_ADMIN"]
+$argon2id$v=19$m=65536,t=4,p=1$YVlLTnRLdzhGRVBPdHNtVQ$IS6wqscoT/C/HXHaLphou4Om7IHAsT7yV5tk2WB4hD8 = 12345678
